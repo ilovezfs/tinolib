@@ -76,22 +76,22 @@ typedef void (*tino_t_sighandler_t)(int);	/* sighandler_t is a GNU extension */
 #define	TINO_T_sockaddr_in6	struct sockaddr_in6
 #endif
 #ifndef	TINO_T_off_t
-#define	TINO_T_off_t	off64_t
+#define	TINO_T_off_t	off_t
 #endif
 #ifndef	TINO_T_fpos_t
-#define	TINO_T_fpos_t	fpos64_t
+#define	TINO_T_fpos_t	fpos_t
 #endif
 #ifndef	TINO_T_stat
-#define	TINO_T_stat	struct stat64
+#define	TINO_T_stat	struct stat
 #endif
 #ifndef	TINO_F_stat
-#define	TINO_F_stat	stat64
+#define	TINO_F_stat	stat
 #endif
 #ifndef	TINO_F_lstat
-#define	TINO_F_lstat	lstat64
+#define	TINO_F_lstat	lstat
 #endif
 #ifndef	TINO_F_fstat
-#define	TINO_F_fstat	fstat64
+#define	TINO_F_fstat	fstat
 #endif
 #ifndef	TINO_F_mkdir
 #define	TINO_F_mkdir	mkdir
@@ -103,52 +103,52 @@ typedef void (*tino_t_sighandler_t)(int);	/* sighandler_t is a GNU extension */
 #define	TINO_F_chdir	chdir
 #endif
 #ifndef	TINO_F_fopen
-#define	TINO_F_fopen	fopen64
+#define	TINO_F_fopen	fopen
 #endif
 #ifndef	TINO_F_freopen
-#define	TINO_F_freopen	freopen64
+#define	TINO_F_freopen	freopen
 #endif
 #ifndef	TINO_F_fdopen
 #define	TINO_F_fdopen	fdopen
 #endif
 #ifndef	TINO_F_open
-#define	TINO_F_open	open64
+#define	TINO_F_open	open
 #endif
 #ifndef	TINO_F_close
 #define	TINO_F_close	close
 #endif
 #ifndef	TINO_F_ftello
-#define	TINO_F_ftello	ftello64
+#define	TINO_F_ftello	ftello
 #endif
 #ifndef	TINO_F_fseeko
-#define	TINO_F_fseeko	fseeko64
+#define	TINO_F_fseeko	fseeko
 #endif
 #ifndef	TINO_F_fgetpos
-#define	TINO_F_fgetpos	fgetpos64
+#define	TINO_F_fgetpos	fgetpos
 #endif
 #ifndef	TINO_F_fsetpos
-#define	TINO_F_fsetpos	fsetpos64
+#define	TINO_F_fsetpos	fsetpos
 #endif
 #ifndef	TINO_F_dup2
 #define	TINO_F_dup2	dup2
 #endif
 #ifndef	TINO_F_truncate
-#define	TINO_F_truncate	truncate64
+#define	TINO_F_truncate	truncate
 #endif
 #ifndef	TINO_F_ftruncate
-#define	TINO_F_ftruncate	ftruncate64
+#define	TINO_F_ftruncate	ftruncate
 #endif
 #ifndef	TINO_F_fflush
 #define	TINO_F_fflush	fflush
 #endif
 #ifndef	TINO_F_fdatasync
-#define	TINO_F_fdatasync	fdatasync
+#define	TINO_F_fdatasync	fsync
 #endif
 #ifndef	TINO_F_fcntl
 #define	TINO_F_fcntl	fcntl
 #endif
 #ifndef	TINO_F_mmap
-#define	TINO_F_mmap	mmap64
+#define	TINO_F_mmap	mmap
 #endif
 #ifndef	TINO_F_munmap
 #define	TINO_F_munmap	munmap
@@ -223,7 +223,7 @@ typedef void (*tino_t_sighandler_t)(int);	/* sighandler_t is a GNU extension */
 #define	TINO_F_shutdown	shutdown
 #endif
 #ifndef	TINO_F_lseek
-#define	TINO_F_lseek	lseek64
+#define	TINO_F_lseek	lseek
 #endif
 #ifndef	TINO_F_fread
 #define	TINO_F_fread	fread

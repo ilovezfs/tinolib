@@ -1184,7 +1184,7 @@ tino_getopt_var_set_arg_imp(struct tino_getopt_impl *p, const char *arg, int n, 
 		break;
 	      }
 	}
-      000;	/* Check for argument overflow?	*/
+      (void) 000;	/* Check for argument overflow?	*/
       return n;
 
     default:
