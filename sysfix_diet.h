@@ -77,5 +77,7 @@
 #define	TINO_F_lseek	lseek
 #endif
 
+#define	posix_memalign	tino_diet_posix_memalign
+
 #endif
 #endif
